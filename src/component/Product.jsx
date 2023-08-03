@@ -7,13 +7,13 @@ const Product = ( { title, image, price, rating ,rate} ) => {
 
   const result = [];
     for (let i = 0; i < rating.rate; i++) {
-      result.push(<div className='text-yellow-550'><FaStar/></div>);
+      result.push(<div className='text-yellow-500'><FaStar/></div>);
     }
 
   
   return (
     <div>
-       <Link to="/product" className='group h-[400px] font-inter shadow-2xl rounded-md flex flex-col gap-4'>
+       <Link to="/product" className='group h-[400px] bg-white font-inter shadow-2xl rounded-md flex flex-col gap-4'>
           <div className='w-full h-full flex justify-center items-center '>
             <div className='w-[200px] mx-auto flex justify-center items-center'>
               
