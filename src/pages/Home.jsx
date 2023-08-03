@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from "../Image/Hero.png";
-import Products from '../component/Products'
+import ProductsList from '../component/ProductsList'
 import {PiAirplaneLight,PiHeadset, PiWallet} from "react-icons/pi"
 
 import Button from '../component/Button'
@@ -62,7 +62,7 @@ const Home = () => {
 
       <div className='w-11/12 mx-auto'>
 
-      <Products/>
+      <ProductsList/>
       </div>
     </div>
   )
