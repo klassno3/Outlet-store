@@ -36,10 +36,10 @@ const ProductDetail = () => {
       <div className="w-10/12  mx-auto flex justify-center">
 
       <div className="flex gap-6">
-            <div className='w-full h-full flex justify-center items-center '>
-            <div className='w-[200px] mx-auto flex justify-center items-center'>
+            <div className='w-full h-full  '>
+            <div className='w-[300px]'>
               
-          <img className=' max-h-[160px] flex justify-center mx-auto rounded-b-none rounded-md transition-all duration-300 group-hover:scale-110 overflow-hidden' src={ image } alt="product" />
+          <img className=' max-h-[300px] ' src={ image } alt="product" />
             </div>
             
         </div>
