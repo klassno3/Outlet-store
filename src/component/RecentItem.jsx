@@ -17,7 +17,7 @@ const RecentItem = ({category}) => {
 
    const filteredProduct = productCategory.map( ( product ) => {
     return (
-  <Product key={ product.id } product={product } /> 
+      <Product key={ product.id } product={ product } detail={ true } /> 
     );
 })
 
