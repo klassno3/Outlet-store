@@ -1,6 +1,6 @@
 import React, {useContext, useEffect,useState} from 'react'
 import { Link,useLocation } from "react-router-dom";
-import { GoPerson } from "react-icons/go"
+// import { GoPerson } from "react-icons/go"
 import { LuShoppingCart } from "react-icons/lu"
 import  BlueLogo  from "../Image/Blue-Logo.svg"
 import { SidecarContext } from '../context/SidebarContext';
