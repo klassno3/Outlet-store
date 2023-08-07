@@ -37,7 +37,7 @@ const ProductDetail = () => {
     <div className='w-11/12   mx-auto py-12 font-inter '>
       <div className="w-10/12  mx-auto flex justify-center">
 
-      <div className="flex gap-6">
+      <div className="flex flex-col md:flex-row gap-6">
             <div className='w-1/2 h-full  '>
             <div className='w-[300px]'>
               
@@ -64,7 +64,7 @@ const ProductDetail = () => {
       </div>
       <div className="py-20">
 
-         <div className="flex justify-center mx-auto my-10 ">
+         <div className="flex justify-center mx-auto mt-10 mt-5 md:my-10 ">
         <h2 className="text-3xl font-kaisei text-primary-300 font-semibold"> Similar Products </h2>
         </div>
           <RecentItem category={ category }></RecentItem>
