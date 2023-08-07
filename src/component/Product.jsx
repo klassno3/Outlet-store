@@ -31,7 +31,7 @@ import { CartContext } from '../context/CartContext'
         </div>
         <Link to={ `product/${ id }` } className={`${detail? "hidden": "absolute top-0 right-0"} `}>
           
-        <div className='cursor-pointer hidden  relative w-10 h-10 rounded-[100000] bg-primary-200 rounded-tr-md transition-all duration-300 group-hover:block'>
+        <div className='cursor-pointer block md:hidden relative w-10 h-10 rounded-[100000] bg-primary-200 rounded-tr-md transition-all duration-300 group-hover:block'>
                 <FaEye size={ 20} className='absolute top-1/2 left-1/2 text-secondary-100  -translate-x-1/2 -translate-y-1/2'/>
               </div>
         </Link>
