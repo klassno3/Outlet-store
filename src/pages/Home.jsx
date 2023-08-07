@@ -11,7 +11,7 @@ const Home = () => {
     <div className='relative z-10 bg-secondary-100'>
 
     <div className='flex w-11/12 mx-auto items-start justify-between pt-20  z-10 relative'>
-      <div className='w-full md:w-1/2  pt-8' >
+      <div className='w-full md:w-1/2  md:pt-8' >
         <h1 className='text-4xl md:flex justify-center mx-auto  md:text-left md:mx-0 text-center pt-5 leading-[3.2rem] xl:leading-[4.5rem] font-bold font-play  bg-gradient-to-r from-primary-300 via-primary-200 to-primary-100 text-transparent bg-clip-text md:text-5xl xl:text-6xl'>
           We have a wide variety of high quaity items to choose from </h1>
         <div className='mt-3 flex md:block justify-center font-kaisei'>
