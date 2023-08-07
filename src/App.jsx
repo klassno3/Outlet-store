@@ -2,7 +2,7 @@ import Account from "./pages/Account"
 
 import Home  from "./pages/Home"
 import Register from "./pages/Register"
-import Search from "./pages/Search"
+
 import Login from "./pages/Login"
 import ProductDetail from "./pages/ProductDetail"
 import Navigation from "./component/Navigation"
