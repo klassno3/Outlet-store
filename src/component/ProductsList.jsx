@@ -87,7 +87,7 @@ const ProductsList = () => {
       <div className="absolute  z-50 left-0 top-30">
            <form action="" className="font-inter"  onSubmit={ handleFormSubmit } >
 
-        <input type="search" placeholder='Search items' value={ term } onChange={ handleChange }  className=" flex items-center justify-between border-[1px] border-primary-300 rounded-md px-4 py-2 w-72 font-italic focus:outline-none " />
+        <input type="search" placeholder='Search items' value={ term } onChange={ handleChange }  className=" flex items-center justify-between border-[1px] border-primary-300 rounded-md px-4 py-2 w-48 md:w-72 font-italic focus:outline-none " />
       </form>
  
       </div>
