@@ -64,7 +64,7 @@ const ProductDetail = () => {
       </div>
       <div className="py-20">
 
-         <div className="flex justify-center mx-auto mt-10 mt-5 md:my-10 ">
+         <div className="flex justify-center mx-auto mt-10 mb-5 md:my-10 ">
         <h2 className="text-3xl font-kaisei text-primary-300 font-semibold"> Similar Products </h2>
         </div>
           <RecentItem category={ category }></RecentItem>
