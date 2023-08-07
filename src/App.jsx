@@ -1,5 +1,5 @@
 import Account from "./pages/Account"
-import Cart from "./pages/Cart"
+
 import Home  from "./pages/Home"
 import Register from "./pages/Register"
 import Search from "./pages/Search"
@@ -39,10 +39,7 @@ function App () {
           path: "/account",
           element:<Account/>,
         },
-         {
-          path: "/cart",
-          element:<Cart/>,
-        },
+       
          {
           path: "/",
           element:<Home className="z-10"/>,
