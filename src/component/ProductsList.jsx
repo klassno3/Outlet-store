@@ -82,22 +82,22 @@ const ProductsList = () => {
       <div className="flex justify-center mx-auto mt-10  ">
         <h2 className="text-3xl font-kaisei text-primary-300 font-semibold"> Top Products </h2>
       </div>
-      <div className="py-10">
+      <div className="flex flex-col justify-between gap-8 md:flex-row pt-10 pb-5 md:py-1">
 
-      <div className="absolute  z-50 left-0 top-30">
+      <div className="">
            <form action="" className="font-inter"  onSubmit={ handleFormSubmit } >
 
-        <input type="search" placeholder='Search items' value={ term } onChange={ handleChange }  className=" flex items-center justify-between border-[1px] border-primary-300 rounded-md px-4 py-2 w-48 md:w-72 font-italic focus:outline-none " />
+        <input type="search" placeholder='Search items' value={ term } onChange={ handleChange }  className=" flex items-center justify-between border-[1px] border-primary-300 rounded-md px-4 py-2 w-full font-italic focus:outline-none " />
       </form>
  
       </div>
-      <div className="absolute  z-50 right-0 top-30">
+      <div className="  ">
 
         
       <DropDown options={ options } selection={ selection } onSelect={ handleSelect } />
       </div>
       </div>
-      <div className="grid py-10 justify-center items-start grid-cols-1 md:grid-cols-3 gap-8 lg:grid-cols-4">
+      <div className="grid py-10 justify-center items-start grid-cols-1 md:grid-cols-3 gap-8 lg:grid-cols-4 ">
      
     {selection ? filteredProduct : renderedSearch}
         
