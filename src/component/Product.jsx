@@ -50,7 +50,7 @@ import { CartContext } from '../context/CartContext'
 
             <p className='text-lg font-semibold text-tertiary-100'>$ { price }</p>
             <div>
-              <div onClick={()=> addToCart( product, id)} className='cursor-pointer  relative w-10 h-10 rounded-full bg-primary-200'>
+              <div onClick={()=> addToCart( product, id)} className='cursor-pointer  relative w-10 h-10 rounded-full bg-primary-200 hover:bg-primary-300'>
                 <FaPlus size={ 20} className='absolute top-1/2 left-1/2 text-secondary-100 -translate-x-1/2 -translate-y-1/2'/>
               </div>
             </div>
