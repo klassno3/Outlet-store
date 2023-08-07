@@ -49,7 +49,7 @@ const ProductDetail = () => {
 
             <p className='text-lg text-primary-100/80 tracking-wide uppercase'>{ category }</p>
             <div className="text-2xl font-semibold text-primary-300">{ title }</div>
-            <div className="w-4/5 text-tertiary-200">{ description }</div>
+            <div className="w-full md:w-4/5 text-tertiary-200">{ description }</div>
             <div className='flex gap-2'>{ result }</div>
             <div className="flex  items-center gap-14">
               <div className="text-xl font-semibold text-primary-300">$ { price }</div>

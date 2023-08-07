@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className='relative z-10 bg-secondary-100'>
 
-    <div className='flex md:w-11/12 mx-auto items-start justify-between md:pt-20 pt-10   z-10 relative'>
+    <div className='flex md:w-11/12 mx-auto items-start justify-between md:pt-20 pt-16   z-10 relative'>
       <div className='w-full md:w-1/2  md:pt-8' >
         <h1 className='text-5xl md:flex justify-center mx-auto  md:text-left md:mx-0 text-center px-2 pt-5 leading-[3rem] xl:leading-[4.5rem] font-bold font-play  bg-gradient-to-r from-primary-300 via-primary-200 to-primary-100 text-transparent bg-clip-text md:text-5xl xl:text-6xl'>
           We have a wide variety of high quaity items to choose from </h1>
@@ -29,7 +29,7 @@ const Home = () => {
       <div className='relative z-10 w-11/12 mx-auto flex flex-col lg:flex-row justify-between  gap-8  xl:gap-10 my-20'>
         <div className='shadow-xl bg-white  lg:w-1/3 w-4/5 md:w-1/2 mx-auto rounded-md px-6 py-3 flex gap-10 transition-all duration-300  hover:scale-105 hover:shadow-2xl'>
           
-          <div className="flex justify-between gap-10 items-center ">
+          <div className="flex flex-col md:flex-row justify-between gap-10 items-center ">
             <PiAirplaneLight size={60} className='rotate-90 text-primary-300'/>
             <div className="flex flex-col lg:text-sm xl:text-base text-sm">
               <p className='font-bold text-primary-300 font-inter '>FREE SHIPPING</p>
@@ -40,7 +40,7 @@ const Home = () => {
         </div>
         <div className='shadow-2xl bg-white lg:w-1/3 w-4/5  md:w-1/2 mx-auto rounded-md px-6 py-3 flex gap-10 transition-all duration-300  hover:scale-105 hover:shadow-2xl'>
           
-          <div className="flex justify-between gap-10 items-center">
+          <div className="flex flex-col md:flex-row justify-between gap-10 items-center">
             <PiHeadset size={60} className='text-primary-300'/>
             <div className="flex flex-col lg:text-sm xl:text-base text-sm">
               <p className='font-bold text-primary-300 font-inter'>24/7 CUSTUMER SERVICE</p>
@@ -51,7 +51,7 @@ const Home = () => {
         </div>
         <div className='shadow-2xl bg-white lg:w-1/3   md:w-1/2 w-4/5 mx-auto rounded-md px-6 py-3 flex gap-10 transition-all duration-300  hover:scale-105 hover:shadow-2xl'>
           
-          <div className="flex justify-between gap-10 items-center">
+          <div className="flex flex-col md:flex-row  justify-between gap-10 items-center">
             <PiWallet size={60} className='text-primary-300'/>
             <div className="flex flex-col lg:text-sm xl:text-base text-sm">
               <p className='font-bold  text-primary-300 font-inter'>CASH ON DELIVERY</p>
