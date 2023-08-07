@@ -12,7 +12,7 @@ const Home = () => {
 
     <div className='flex md:w-11/12 mx-auto items-start justify-between md:pt-20 pt-10   z-10 relative'>
       <div className='w-full md:w-1/2  md:pt-8' >
-        <h1 className='text-4xl md:flex justify-center mx-auto  md:text-left md:mx-0 text-center pt-5 leading-[3rem] xl:leading-[4.5rem] font-bold font-play  bg-gradient-to-r from-primary-300 via-primary-200 to-primary-100 text-transparent bg-clip-text md:text-5xl xl:text-6xl'>
+        <h1 className='text-5xl md:flex justify-center mx-auto  md:text-left md:mx-0 text-center px-2 pt-5 leading-[3rem] xl:leading-[4.5rem] font-bold font-play  bg-gradient-to-r from-primary-300 via-primary-200 to-primary-100 text-transparent bg-clip-text md:text-5xl xl:text-6xl'>
           We have a wide variety of high quaity items to choose from </h1>
         <div className='mt-3 flex md:block justify-center font-kaisei'>
           
@@ -31,7 +31,7 @@ const Home = () => {
           
           <div className="flex justify-between gap-10 items-center ">
             <PiAirplaneLight size={60} className='rotate-90 text-primary-300'/>
-            <div className="flex flex-col lg:text-sm xl:text-base">
+            <div className="flex flex-col lg:text-sm xl:text-base text-sm">
               <p className='font-bold text-primary-300 font-inter '>FREE SHIPPING</p>
               <p className='text-primary-100'>On order over 500 birr</p>
             </div>
@@ -42,7 +42,7 @@ const Home = () => {
           
           <div className="flex justify-between gap-10 items-center">
             <PiHeadset size={60} className='text-primary-300'/>
-            <div className="flex flex-col lg:text-sm xl:text-base">
+            <div className="flex flex-col lg:text-sm xl:text-base text-sm">
               <p className='font-bold text-primary-300 font-inter'>24/7 CUSTUMER SERVICE</p>
               <p className='text-primary-100'>Call us 24/7 at 0966545645</p>
             </div>
@@ -53,7 +53,7 @@ const Home = () => {
           
           <div className="flex justify-between gap-10 items-center">
             <PiWallet size={60} className='text-primary-300'/>
-            <div className="flex flex-col lg:text-sm xl:text-base">
+            <div className="flex flex-col lg:text-sm xl:text-base text-sm">
               <p className='font-bold  text-primary-300 font-inter'>CASH ON DELIVERY</p>
               <p className='text-primary-100'>100% money back guarantee</p>
             </div>

@@ -28,7 +28,7 @@ const Footer = () => {
             <span>+251966545645</span>
           </div>
           </div>
-        <div className='flex justify-center md:justify-start gap-4 text-2xl pb-8 w-11/12 mx-auto cursor-pointer'>
+        <div className='flex justify-center md:justify-start gap-8 text-2xl pb-8 w-11/12 mx-auto cursor-pointer'>
           <FaFacebook />
           <FaInstagram />
           <FaTwitter/>

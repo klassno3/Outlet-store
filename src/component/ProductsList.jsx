@@ -79,7 +79,7 @@ const ProductsList = () => {
   
   return (
     <div className='products relative py-10'>
-      <div className="flex justify-center mx-auto mt-10  ">
+      <div className="flex justify-center mx-auto md:mt-10  ">
         <h2 className="text-3xl font-kaisei text-primary-300 font-semibold"> Top Products </h2>
       </div>
       <div className="flex flex-col justify-between gap-8 md:flex-row pt-10 pb-5 md:py-1">
