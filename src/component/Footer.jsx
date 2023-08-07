@@ -22,13 +22,13 @@ const Footer = () => {
           <div className='border-t-[.5px] border-secondary-100 '></div>
           <div className='flex flex-col gap-3 w-11/12 mx-auto font-inter'>
 
-          <p className='text-secondary-100 w-1/3'> Keep upto date with variety of high quaity products with our unbeatabe price </p>
+          <p className='text-secondary-100 xl:w-1/3'> Keep upto date with variety of high quaity products with our unbeatabe price </p>
           <div className="flex items-center text-secondary-100 gap-3">
             <FaPhoneAlt/>
             <span>+251966545645</span>
           </div>
           </div>
-        <div className='flex gap-4 text-2xl pb-8 w-11/12 mx-auto cursor-pointer'>
+        <div className='flex justify-center md:justify-start gap-4 text-2xl pb-8 w-11/12 mx-auto cursor-pointer'>
           <FaFacebook />
           <FaInstagram />
           <FaTwitter/>
