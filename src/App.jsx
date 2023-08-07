@@ -54,10 +54,6 @@ function App () {
           element:<ProductDetail/>,
         },
          {
-          path: "/search",
-          element:<Search/>,
-        },
-         {
           path: "/register",
           element:<Register/>,
         },

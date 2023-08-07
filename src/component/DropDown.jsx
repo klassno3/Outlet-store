@@ -38,7 +38,7 @@ const renderedOptions = options.map( ( option ) => {
  
 
   return (
-    <div ref={divEl} className='cursor-pointer my-10'>
+    <div ref={divEl} className='cursor-pointer '>
       {/* if selection is null it will print Select.... if it not null it wil print selection.label */}
       <div onClick={ handleClick } className='flex items-center justify-between border-[1px] border-primary-300 rounded-md px-4 py-2 w-48'>
         <div className='font-inter capitalize'>{ selection ? selection : "CATEGORIES" }</div>
