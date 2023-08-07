@@ -1,6 +1,6 @@
 import { useState, useEffect, createContext } from "react";
 
-const ProductContext = createContext();
+export const ProductContext = createContext();
 const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
  
@@ -23,4 +23,4 @@ const ProductProvider = ({ children }) => {
   );
 };
 
-export { ProductContext, ProductProvider };
+export default ProductProvider ;

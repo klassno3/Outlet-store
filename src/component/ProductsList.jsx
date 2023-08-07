@@ -23,7 +23,7 @@ const ProductsList = () => {
     const response = await fetch(`https://fakestoreapi.com/products/category/${selection}`);
     const data = await response.json();
     setProductCategory( data );
-    console.log( productCategory )
+   
   
   };
   fetchProductsCatagory();
@@ -41,7 +41,7 @@ const ProductsList = () => {
 
   const filteredProduct = productCategory.map( ( product ) => {
     return (
-  <Product key={ product.id } { ...product } /> 
+  <Product key={ product.id } product={product } /> 
     );
 })
 
@@ -50,7 +50,7 @@ const ProductsList = () => {
 
 const renderedProducts =  products.map( ( product ) => {
         return (
-          <Product key={ product.id } { ...product } /> 
+          <Product key={ product.id } product={product } /> 
         )
       }) 
  
@@ -59,7 +59,7 @@ const renderedProducts =  products.map( ( product ) => {
       <div className="flex justify-center mx-auto my-10 ">
         <h2 className="text-3xl font-kaisei text-primary-300 font-semibold"> Top Products </h2>
       </div>
-      <div className="absolute right-0 top-20">
+      <div className="absolute  z-50 right-0 top-20">
 
       <DropDown options={ options } selection={ selection } onSelect={ handleSelect } />
       </div>

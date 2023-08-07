@@ -1,29 +1,44 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from "react-router-dom";
-import { FaPlus ,FaStar} from "react-icons/fa"
-const Product = ( { title, image, price, rating ,rate} ) => {
-   
+import { FaPlus, FaStar, FaEye } from "react-icons/fa"
+
+import { CartContext } from '../context/CartContext'
 
 
+
+
+  
+  const Product = ( { product } ) => {
+    const { id, image, category, title, price, rating } = product;
+  const { addToCart } = useContext( CartContext );
+  
+  
+  
   const result = [];
     for (let i = 0; i < rating.rate; i++) {
       result.push(<div className='text-yellow-500'><FaStar/></div>);
     }
 
-  
   return (
-    <div>
-       <Link to="/product" className='group h-[400px] bg-white font-inter shadow-2xl rounded-md flex flex-col gap-4'>
+    <div key={id}>
+       <div to="/product" className='relative z-10 group h-[400px] bg-white font-inter shadow-2xl rounded-md flex flex-col gap-4'>
           <div className='w-full h-full flex justify-center items-center '>
             <div className='w-[200px] mx-auto flex justify-center items-center'>
               
           <img className=' max-h-[160px] flex justify-center mx-auto rounded-b-none rounded-md transition-all duration-300 group-hover:scale-110 overflow-hidden' src={ image } alt="product" />
             </div>
             
-          </div>
+        </div>
+        <Link to={ `product/${ id }` } className='absolute top-0 right-0'>
+          
+        <div className='cursor-pointer hidden  relative w-10 h-10 rounded-[100000] bg-primary-200  transition-all duration-300 group-hover:block'>
+                <FaEye size={ 20} className='absolute top-1/2 left-1/2 text-secondary-100 -translate-x-1/2 -translate-y-1/2'/>
+              </div>
+        </Link>
           <div className="pt-2 px-4 pb-6 flex flex-col gap-2">
             
-          <p className='text-lg text-tertiary-100 '>{ title }</p>
+          <p className='text-xs text-tertiary-300 tracking-wide uppercase'>{category}</p>
+          <p className='text-sm text-tertiary-100 '>{ title }</p>
           
           <div className='flex gap-2'>
         
@@ -31,11 +46,11 @@ const Product = ( { title, image, price, rating ,rate} ) => {
             {result}
             
           </div>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center ">
 
-            <p className='text-ld font-semibold text-tertiary-100'>$ { price }</p>
+            <p className='text-lg font-semibold text-tertiary-100'>$ { price }</p>
             <div>
-              <div className='cursor-pointer  relative w-10 h-10 rounded-full bg-primary-200'>
+              <div onClick={()=> addToCart( product, id)} className='cursor-pointer  relative w-10 h-10 rounded-full bg-primary-200'>
                 <FaPlus size={ 20} className='absolute top-1/2 left-1/2 text-secondary-100 -translate-x-1/2 -translate-y-1/2'/>
               </div>
             </div>
@@ -43,7 +58,7 @@ const Product = ( { title, image, price, rating ,rate} ) => {
             </div>
           </div>
           
-          </Link>
+          </div>
     </div>
   )
 }

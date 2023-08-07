@@ -44,7 +44,7 @@ const renderedOptions = options.map( ( option ) => {
         <div className='font-inter capitalize'>{ selection ? selection : "CATEGORIES" }</div>
         <GoChevronDown size={20} />
       </div>
-      { isOpen && <div className='flex flex-col gap-2 bg-white shadow-xl px-4 py-3 rounded-b-md w-48'>{ renderedOptions } </div> }
+      { isOpen && <div className='flex flex-col gap-2 z-50 bg-white shadow-xl px-4 py-3 rounded-b-md w-48'>{ renderedOptions } </div> }
       
     </div>
   )

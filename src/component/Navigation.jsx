@@ -1,17 +1,22 @@
-import React, {useEffect,useState} from 'react'
+import React, {useContext, useEffect,useState} from 'react'
 import { Link } from "react-router-dom";
 import { BiSearch} from "react-icons/bi"
 import { GoPerson } from "react-icons/go"
 import { LuShoppingCart } from "react-icons/lu"
 import  BlueLogo  from "../Image/Blue-Logo.svg"
+import { SidecarContext } from '../context/SidebarContext';
+import { CartContext } from '../context/CartContext';
 
 
 
 const Navigation = () => {
+  const { isOpen, setIsOpen } = useContext( SidecarContext )
   const [ active, setActive ] = useState( false );
+  const { itemAmount } = useContext( CartContext );
+  
 
    const isActive = () => {
-    window.scrollY > 0 ? setActive( true ) : setActive( false )
+    window.scrollY > 50 ? setActive( true ) : setActive( false )
   }
   useEffect( () => {
     window.addEventListener( "scroll", isActive )
@@ -21,7 +26,7 @@ const Navigation = () => {
     }
   }, [] );
   return (
-    <div className={`sticky top-0 left-0 z-50 py-5 ${active ? "bg-white shadow-xl" :"  bg-secondary-100 shadow-none" }`}>
+    <div className={`sticky top-0 left-0 z-40 py-5 ${ active ? "bg-white shadow-xl" :"  bg-secondary-100 shadow-none" }`}>
      <div className="flex justify-between w-11/12 mx-auto">
         <Link to="/" className=" font-kaisei gap-1  text-2xl font-semibold w-10 flex items-center ">
           <img src={ BlueLogo } alt="" />
@@ -30,7 +35,17 @@ const Navigation = () => {
         <div className="flex  gap-12">
           <Link to={ `/search` }><BiSearch size={ 30 } /></Link>
           <Link to={ `/account` }><GoPerson size={ 30 } /></Link>
-          <Link to={ `/cart` }><LuShoppingCart size={ 30 } /></Link>
+          <div className='relative cursor-pointer'  onClick={ () => setIsOpen( !isOpen ) }>
+            
+            <LuShoppingCart size={ 30 } />
+          
+            <div className="absolute -top-1 -right-3 bg-primary-200 w-4 h-4 text-xs rounded-full px-2">
+              <div className="flex justify-center text-secondary-100">
+             {itemAmount}
+
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>

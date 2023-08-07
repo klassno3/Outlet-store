@@ -4,7 +4,7 @@ import Home  from "./pages/Home"
 import Register from "./pages/Register"
 import Search from "./pages/Search"
 import Login from "./pages/Login"
-import Product from "./pages/Product"
+import ProductDetail from "./pages/ProductDetail"
 import Navigation from "./component/Navigation"
 import Footer from "./component/Footer"
 import {
@@ -12,6 +12,7 @@ import {
   Outlet,
   RouterProvider,
 } from "react-router-dom";
+import Sidebar from "./component/Sidebar"
 
 
 function App () {
@@ -21,7 +22,8 @@ function App () {
     return (
       <div className="">
 
-        <Navigation/>
+        <Navigation />
+        <Sidebar/>
         <Outlet/>
      <Footer/>
       </div>
@@ -49,9 +51,10 @@ function App () {
           path: "/login",
           element:<Login/>,
         },
+       
          {
-          path: "/product",
-          element:<Product/>,
+          path: "/product/:id",
+          element:<ProductDetail/>,
         },
          {
           path: "/search",

@@ -17,7 +17,8 @@ const Footer = () => {
           Outlet.
           </p>
           </Link>
-</div>
+          </div>
+          
           <div className='border-t-[.5px] border-secondary-100 '></div>
           <div className='flex flex-col gap-3 w-11/12 mx-auto font-inter'>
 
@@ -27,7 +28,7 @@ const Footer = () => {
             <span>+251966545645</span>
           </div>
           </div>
-        <div className='flex gap-4 text-2xl pb-8 w-11/12 mx-auto'>
+        <div className='flex gap-4 text-2xl pb-8 w-11/12 mx-auto cursor-pointer'>
           <FaFacebook />
           <FaInstagram />
           <FaTwitter/>
