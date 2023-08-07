@@ -2,7 +2,7 @@ import React, { useContext,useState,useEffect } from 'react'
 import { ProductContext } from '../context/ProductContext'
 import  Product  from "./Product"
 import DropDown from './DropDown';
-import Button from './Button';
+
 
 
 const ProductsList = () => {
@@ -103,11 +103,6 @@ const ProductsList = () => {
         
       </div>
 
-      <div className='flex justify-center mx-auto mb-10'>
-
-        <Button>More products</Button>
-        
-      </div>
     </div>
   )
 }

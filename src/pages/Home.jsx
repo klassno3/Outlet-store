@@ -10,10 +10,10 @@ const Home = () => {
   return (
     <div className='relative z-10 bg-secondary-100'>
 
-    <div className='flex w-11/12 mx-auto justify-between pt-20  z-10 relative'>
+    <div className='flex w-11/12 mx-auto items-start justify-between pt-20  z-10 relative'>
       <div className='w-1/2 pt-8' >
-        <h1 className='text-5xl pt-5 leading-[3.2rem] font-bold font-kaisei  bg-gradient-to-r from-primary-300 via-primary-200 to-primary-100 inline-block text-transparent bg-clip-text'>
-          We have a wide variety of high quaity items to choose from and our prices are unbeatable</h1>
+        <h1 className='text-6xl pt-5 leading-[4.5rem] font-bold font-play  bg-gradient-to-r from-primary-300 via-primary-200 to-primary-100 inline-block text-transparent bg-clip-text'>
+          We have a wide variety of high quaity items to choose from </h1>
         <div className='mt-3 font-kaisei'>
           
         <Button >Discover More</Button>

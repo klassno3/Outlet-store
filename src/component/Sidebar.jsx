@@ -9,7 +9,7 @@ import { CartContext } from '../context/CartContext'
 const Sidebar = () => {
 
   const { isOpen, handleClose } = useContext( SidecarContext );
-  const { cart, clearCart, total } = useContext( CartContext );
+  const { cart, clearCart, total,itemAmount } = useContext( CartContext );
 
   const renderedCart = cart.map( ( item ) => {
     return <CartItem key={ item.id } item={ item } />
@@ -21,7 +21,7 @@ const Sidebar = () => {
       
       <div className="flex  items-center justify-between font-inter py-6 border-b">
         <div className="uppercase text-xm font-semibold">
-          shopping bag (0)
+          shopping Cart ({itemAmount})
 
         </div>
         <div onClick={ handleClose} className="cursor-pointer w-8 h-8 flex justify-center items-center">

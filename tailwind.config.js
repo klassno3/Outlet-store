@@ -13,6 +13,7 @@ module.exports = {
       fontFamily: {
       inter: ['inter', 'sans-serif'],
       kaisei: ['Kaisei Decol', 'sans-serif'],
+      play: ['Playfair Display', 'sans-serif'],
     },
     extend: {
       colors: {
