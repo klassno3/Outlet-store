@@ -20,22 +20,25 @@ const Footer = () => {
           </div>
           
           <div className='border-t-[.5px] border-secondary-100 '></div>
-          <div className='flex flex-col gap-3 w-11/12 mx-auto font-inter'>
-
+          <div className='flex flex-col justify-start items-centert gap-4 w-11/12 mx-auto font-inter'>
+            <div>
+              
           <p className='text-secondary-100 xl:w-1/3'> Keep upto date with variety of high quaity products with our unbeatabe price </p>
-          <div className="flex items-center text-secondary-100 gap-3">
+            </div>
+            
+          <div className="flex items-center text-secondary-100 gap-1">
             <FaPhoneAlt/>
             <span>+251966545645</span>
           </div>
+        <div className='flex items-start  gap-4 md:gap-6 text-2xl pb-8 cursor-pointer'>
+          <FaFacebook className='hover:scale-105 transform-all duration-300' />
+          <FaInstagram className='hover:scale-105 transform-all duration-300' />
+          <FaTwitter className='hover:scale-105 transform-all duration-300'/>
+        </div>
+        </div>
           </div>
-        <div className='flex t gap-8 text-2xl pb-8 w-11/12 mx-auto cursor-pointer'>
-          <FaFacebook />
-          <FaInstagram />
-          <FaTwitter/>
-        </div>
-        </div>
         <div className='border-t-[.5px] border-secondary-100'></div>
-        <p className='text-center text-secondary-100 flex justify-center pt-5 font-inter'>&copy;Copyrights reserved 2023</p>
+        <p className='text-center text-secondary-100 flex justify-center pt-5 font-inter'>&copy; Copyrights reserved 2023</p>
       </div>
     </div>
   )

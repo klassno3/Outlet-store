@@ -34,12 +34,12 @@ const ProductDetail = () => {
   return (
     <div className="bg-secondary-100  ">
       
-    <div className='w-11/12   mx-auto py-12 font-inter '>
+    <div className='w-11/12  mx-auto py-12 font-inter '>
       <div className="w-10/12  mx-auto flex justify-center">
 
       <div className="flex flex-col md:flex-row gap-6">
             <div className='w-1/2 h-full  '>
-            <div className='w-[300px]'>
+            <div className='w-[200px] md:w-[300px]'>
               
           <img className=' max-h-[300px] ' src={ image } alt="product" />
             </div>
@@ -47,15 +47,15 @@ const ProductDetail = () => {
         </div>
         <div className=" flex flex-col gap-3">
 
-            <p className='text-lg text-primary-100/80 tracking-wide uppercase'>{ category }</p>
-            <div className="text-2xl font-semibold text-primary-300">{ title }</div>
+            <p className='text-sm lg:text-lg text-primary-100/80 tracking-wide uppercase'>{ category }</p>
+            <div className="text-xl md:text-2xl font-semibold text-primary-300">{ title }</div>
             <div className="w-full md:w-4/5 text-tertiary-200">{ description }</div>
             <div className='flex gap-2'>{ result }</div>
             <div className="flex  items-center gap-14">
-              <div className="text-xl font-semibold text-primary-300">$ { price }</div>
+              <div className="text-base md:text-lg font-semibold text-primary-300">$ { price }</div>
               <div>
 
-          <div onClick={ () => addToCart( product, id ) } className='text-lg text-primary-300 cursor-pointer uppercase hover:underline'>add to cart</div>
+          <div onClick={ () => addToCart( product, id ) } className='text-base md:text-lg text-primary-300 cursor-pointer uppercase hover:underline'>add to cart</div>
               </div>
           </div>
         </div>

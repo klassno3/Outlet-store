@@ -32,7 +32,7 @@ const DropDown = ( { options, selection, onSelect } ) => {
 
 const renderedOptions = options.map( ( option ) => {
       
-  return ( <div className='border-b-[1px] pb-2 border-tertiary-300/60' onClick={()=> handleOptionClick(option) } key={ option.value }>{ option.label }</div> )
+  return ( <div className='border-b-[1px] pb-2 border-tertiary-300/30' onClick={()=> handleOptionClick(option) } key={ option.value }>{ option.label }</div> )
   } ); 
       
  
